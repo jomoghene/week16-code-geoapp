@@ -9,6 +9,7 @@ pipeline {
                 withSonarQubeEnv('sonerserver'){
                 sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=jomoghene_week16-code-geoapp'
             }
+            }
             
         }
         stage('all maven commands'){
